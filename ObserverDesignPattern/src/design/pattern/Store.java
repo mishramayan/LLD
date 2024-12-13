@@ -1,4 +1,4 @@
-package src.design.pattern;
+package design.pattern;
 
 import design.pattern.observable.IphoneObservableImpl;
 import design.pattern.observable.StockObservable;
