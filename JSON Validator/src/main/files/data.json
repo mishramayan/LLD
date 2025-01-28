@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "user001",
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "tasks": [
+        {
+          "taskId": "task001",
+          "title": "Complete Project Report",
+          "description": "Write the final report for the project and submit it by the deadline.",
+          "status": "in progress",
+          "dueDate": "2025-01-30"
+        },
+        {
+          "taskId": "task002",
+          "title": "Team Meeting",
+          "description": "Discuss project updates and allocate next tasks.",
+          "status": "pending",
+          "dueDate": "2025-01-27"
+        }
+      ]
+    },
+    {
+      "id": "user002",
+      "name": "Bob Smith",
+      "email": "bob.smith@example.com",
+      "tasks": [
+        {
+          "taskId": "task003",
+          "title": "Code Review",
+          "description": "Review the latest code changes pushed to the repository.",
+          "status": "completed",
+          "dueDate": "2025-01-24"
+        }
+      ]
+    }
+  ]
+}
