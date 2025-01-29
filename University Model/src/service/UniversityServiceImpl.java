@@ -33,7 +33,7 @@ public class UniversityServiceImpl implements UniversityService {
 
     private void printCourseDetails(Course course) {
         int id = course.getCourseId();
-        System.out.println(id + ": " + course.getCourseName(id));
+        System.out.println(id + ": " + course.getCourseName(id) + ". Faculty: " + course.getFacultyName());
         printPrerequisites(course);
     }
 
@@ -45,7 +45,7 @@ public class UniversityServiceImpl implements UniversityService {
         } else {
             for (Course pre : preReq) {
                 int preId = pre.getCourseId();
-                System.out.println(preId + ": " + pre.getCourseName(preId));
+                System.out.println(preId + ": " + pre.getCourseName(preId) + ". Faculty: " + pre.getFacultyName());
             }
         }
     }
