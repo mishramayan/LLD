@@ -12,13 +12,13 @@ public class UniversityApp {
     public static void main(String[] args) {
         SystemManager sysManager = new SystemManagerImpl();
 
-        List<Course> courses = sysManager.createCourse();
-        List<Streams> streams = sysManager.addStreams();
-        List<Student> students = sysManager.addStudent(courses, streams);
-
         UniversityService us = new UniversityServiceImpl();
-        us.getStudentInformation(students.get(0));
+        us.getCourseList();
         System.out.println("------------------------------------------------");
-        us.getStudentInformation(students.get(1));
+        us.getStudentInformation(sysManager.getStudent(6624537));
+        System.out.println("------------------------------------------------");
+        us.getStudentInformation(sysManager.getStudent(1554537));
+        System.out.println("------------------------------------------------");
+        us.getStudentInformation(sysManager.getStudent(1000537));
     }
 }

@@ -7,6 +7,7 @@ import student.Student;
 import java.util.List;
 
 public class UniversityServiceImpl implements UniversityService {
+    SystemManager sm = new SystemManagerImpl();
 
     @Override
     public void getStudentInformation(Student student) {
@@ -17,6 +18,11 @@ public class UniversityServiceImpl implements UniversityService {
 
         printStudentDetails(name, stream);
         printCourses(courses);
+    }
+
+    @Override
+    public void getCourseList() {
+        printCourses(sm.getCourseList());
     }
 
     private void printStudentDetails(String name, Streams stream) {
